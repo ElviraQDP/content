@@ -207,7 +207,7 @@ Use the sliders on the left toolbar to change the margin, padding, border radios
 ## There is Much More to Know about Layouts
 ***
 
-You will have to be learning "on the go" because there is an infinite amount of combinations you can create for a website layout.  What really matters is that you fully understand the display, absolute, float and overflow rules.
+You will have to be learning "on the go" because there is an infinite amoiunt of combinations you can create for a website layout.  What really matters is that you fully understand the display, absolute, float and overflow rules.
 
 Worry not, my friend.  A major part of Bootstrap is made to make layouts easier.  You will learn that in the next lesson.
 
