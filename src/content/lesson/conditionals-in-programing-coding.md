@@ -110,7 +110,7 @@ Another great trick for faster coding is using ternaries that basically allow us
 ```js
 const flu = (feelsLikeHitByTrain && !youWereHitByTrain) ? true : false;
 ```
-In this example the variable `flu` will only be true if ` feelsLikeHitByTrain==true` and ` youWereHitByTrain==false` at the same time. If that question is not true, then ` flu` will be false.
+In this example the variable `flu` will only be true if ` feelsLikeHitByTrain==true` and ` youWereHitByTrain==false` at the same time. If both questions are not true, then ` flu` will be false.
 
 Ternaries are being used A LOT these days because they save you a lot of time and we will also be able to use them later in jsx code (React).
 
