@@ -9,7 +9,7 @@ textColor: "white"
 tags: ["conditionals", "logical operations", "if else", "conditions"]
 ---
 
-Dominar el uso de las condiciones es una de las 5 habilidades fundamentales de construir algoritmos:
+Dominar el uso de las condiciones es una de las 5 habilidades fundamentales para construir algoritmos:
 
 1. Variables.
 2. `Condicionales`.
@@ -17,12 +17,12 @@ Dominar el uso de las condiciones es una de las 5 habilidades fundamentales de c
 4. Loops(Bucles).
 5. Funciones.
 
-Las condiciones son la única forma en que los desarrolladores tienen que decirle a la computadora cómo tomar decisiones en tiempo real, muy similar a cómo funcionan los cerebros.
+Las condiciones son la única forma en que los desarrolladores tienen para decirle a la computadora cómo tomar decisiones en tiempo real, muy similar a cómo funciona nuestro cerebro.
 
-Digamos que estamos construyendo un programa para ayudarnos a elegir qué almacenar y odiamos el color azul, podemos decirle a la computadora que evite el azul usando una condición como esta:
+Digamos que estamos construyendo un programa para ayudarnos a elegir qué color usar para vestirnos y odiamos el color azul, podemos decirle a la computadora que evite el azul usando una condición como esta:
   
   
-`If` ***color*** is not **blue**, then... do something.  
+`If` ***color*** in not **blue**, then... do something.  
 `Else`... do nothing or exit.
   
 ![Condicionales](https://ucarecdn.com/e73b673e-d744-45a7-a1ed-61a1dae49560/)
@@ -34,16 +34,16 @@ if(color != 'blue'){
     //Cualquier código aquí se ejecutará cuando el color sea diferente al azul.
 }
 else{
-    //solo ejecutará este código si el color no es azul.
+    //solo ejecutará este código si el color es azul.
 }
 ```
 
-## Se trata de qué preguntas hacer
+## Todo depende de la pregunta: ¿Qué preguntar?
 
-El ejemplo anterior era una condición simple, pero en la vida real elegir qué guardar implica una combinación de varias condiciones para tomar la decisión final, por ejemplo: veamos este algoritmo que indica si tienes gripe
+El ejemplo anterior era una condición simple, pero en la vida real elegir qué vestir implica una combinación de varias condiciones para tomar la decisión final, por ejemplo: veamos este algoritmo que indica si tienes gripe
 ![Hit by a flu or have a cold](https://ucarecdn.com/03ed6b76-0ee0-4b04-bd45-0fb58ae6f800/)
 
-Si desea representar este algoritmo en Javascript, se verá más o menos así:
+Si quieres representar este algoritmo en Javascript, se vería más o menos así:
 
 ```js
 let feelsLikeHitByTrain = true;
@@ -63,11 +63,11 @@ else{
 ```
 
 Básicamente, este algoritmo tiene dos variables a considerar: `feelsLikeHitByTrain` y` youWereHitByTrain`.
-Nuestro trabajo como desarrolladores es sentarnos e intentar preparar una estrategia y crear un algoritmo que resuelva un problema.
+Nuestro trabajo como desarrolladores es sentarnos e intentar crear una estrategia y un algoritmo que resuelva un problema.
 
 ## Operadores `AND` y `OR`
 
-Otra forma de escribir el algoritmo es combinar preguntas en la misma condición utilizando los operadores `AND` y` OR` que en Javascript se representan con `&& para AND` y` || para OR`:
+Otra forma de escribir el algoritmo es combinar preguntas en la misma condición utilizando los operadores `AND` (y) y` OR`(o). En Javascript `AND`se representa con  `&& ` y  `OR` se representa con  `||` :
 
 ```js
 if(feelsLikeHitByTrain == false || youWereHitByTrain == true){
@@ -81,12 +81,12 @@ else{
 }
 ```
 
-Como puedes ver aquí, estamos usando `else if` juntos por primera vez, para una codificación más rápida. Otro truco que puedes usar para una codificación más rápida:
+Como puedes ver aquí, estamos usando `else if` juntos por primera vez, para codificar más rápidamente. Otro truco que puedes usar para codificar más rápido:
 
 | Original | Equivalente |
 | --- | --- |
-| en lugar de `if(feelsLikeHitByTrain == true)` | you write `if(feelsLikeHitByTrain)`  |
-| en lugar de `if(feelsLikeHitByTrain == false)` | you write `if(!feelsLikeHitByTrain)` |
+| en lugar de `if(feelsLikeHitByTrain == true)` | escribes `if(feelsLikeHitByTrain)`  |
+| en lugar de `if(feelsLikeHitByTrain == false)` |escribes `if(!feelsLikeHitByTrain)` |
 
 ## Operadores mayores que o menores que `>` y `<`
 
@@ -127,13 +127,13 @@ Otro gran truco para una codificación más rápida es usar ternarios que básic
 ```js
 const flu = (feelsLikeHitByTrain && !youWereHitByTrain) ? true : false;
 ```
-En este ejemplo, la variable `flu` solo será verdadera si` feelsLikeHitByTrain == true` y `youWereHitByTrain == false` al mismo tiempo. Si esa pregunta no es cierta, entonces flu será falso.
+En este ejemplo, la variable `flu` solo será verdadera si` feelsLikeHitByTrain == true` y `youWereHitByTrain == false` son verdaderas. Si una de esas preguntas no es cierta, entonces flu será falso.
 
 Los ternarios se usan MUCHO en estos días porque te ahorran mucho tiempo.
 
-## Renderizando Condicionales
+## Renderizado Condicional
 
-Otro gran uso de las condiciones es generar HTML basado en ciertas condiciones, por ejemplo, digamos que tenemos un bootstrap Alert que estamos a punto de presentar en el sitio web:
+Otro gran uso de las condiciones es generar HTML en base a ciertas condiciones, por ejemplo, digamos que tenemos una alerta de bootstrap que estamos a punto de renderizar en el sitio web:
 
 ```js
 let alertHTMLCode = "<div>Cuidado! Tu no puedes manejar</div>";
