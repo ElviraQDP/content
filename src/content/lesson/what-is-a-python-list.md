@@ -47,7 +47,7 @@ Every list has the same basic concepts:
 These are different examples of list declarations:
 
 ```python
-myList = [] # lista vacia
+myList = [] #an empty list
 myList = ["Apple", "Orange", "Donkey"] # The only way to declare a list
 myTuple = ("Apple", "Orange", "Donkey") # this is not a list, its a more limited version called "Tuple"
 mySet = {"Apple", "Orange", "Donkey"} # this is not a list, it's a "set" (more limited version of list)
@@ -149,7 +149,7 @@ for number in myList:
     print(number)
 ```
 
-## Looping using the postion
+## Looping using the position
 
 Sometimes it is useful to loop the array using each element's position:
 
