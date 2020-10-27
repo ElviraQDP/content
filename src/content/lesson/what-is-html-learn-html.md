@@ -5,7 +5,7 @@ cover_local: "../../assets/images/4cc6fa0b-2530-4052-aa7e-8dac03788ac3.png"
 textColor: "white"
 date: "2020-10-19T12:36:31-04:00"
 tags: ["html"]
-status: "draft"
+status: "published"
 
 ---
 
@@ -32,7 +32,6 @@ Originally, browsers only knew how to interpret HTML.  Websites were simple and 
 Remember when we said the Internet is all text?
 
 In that sense, HTML is a language that uses `<tags>` to represent the elements that a web page must-have. A tag is just a word that begins and ends with `<` and `/>`, respectively.
-
 
 
 All tags must open and close. To close a tag you must place the same word or letter you used to open it but using `/>`.
@@ -122,7 +121,7 @@ In the case of HTML, the `<head>` can contain the following tags (among other le
 
 |**Name**   |**Tag**   |**Description**   |
 |:----------|:---------|:-----------------|
-|Title   |`<title>`   |The title appears in the browser’s window, and it’s also used when you share the page through social media: Twitter, Instagram, Facebook, etc.  All these networks use the title of the page as the excerpt when a user copies the URL of your page to share on their wall.   |
+|Title   |`<title>`   |The title appears in the browser’s window, and it’s also used when you share the page through social media: Twitter, Instagram, Facebook, etc.  All these networks use the title of the page as the excerpt when a user copies the URL of your page to share on their wall. It's aldo fundamental for Search ENgine Optimization, Google gives great importance to this.  |
 |Meta   |`<meta>`   |Meta tags describe documents.  They are used to specify things like: the author, title, date, keywords, descriptions, etc.   Search engines love these tags because they allow an easier comprehension of the content before it is read.   |
 |Link   |`<link>`   |Used for linking the page with the CSS style sheets.  In the CSS chapter you will learn how to create style sheets and you will be able to import them using the Link tag.   |
 |Style   |`<style>`   |If we can’t or don’t want to import a CSS style sheet, we may also define styles directly on the HTML document inside the Style tag.  This is a practice we rarely recommend and should only be used when you don’t have any other choice.   |
@@ -160,6 +159,7 @@ The most frequent tags used inside the `<body>` of an HTML document are:
 We already know each `<tag>`'s behavior.  Thanks to tags we can change the font size – as is the case with headings –, add margins between paragraphs, list elements, etc.
 
 If you wish to further specify how you want the behavior of a specific tag to be, you can use its attributes. To use them, you must define the attributes in the opening tag, like this:
+
 ```html
 <img src="http://www.mydomain.com/myimage.png" \>
 ```
